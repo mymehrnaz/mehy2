@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>My weather App</title>
+  </head>
+  <body>
+    <div class="meteo-app">
+      <header>
+        <form class="search-engine" id="search-engine">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-engine-input"
+            class="search-engine-input"
+          />
+          <input type="submit" value="Search" class="engine-button" />
+        </form>
+      </header>
+      <main>
+        <div class="meteo-data">
+          <div>
+            <h1 class="meteo-city" id="city"></h1>
+            <p class="meteo-details">
+              <span id="clock"></span>,
+              <span id="situation"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-item"></strong>
+            </p>
+          </div>
+          <div class="meteo-temperature-box">
+            <div id="icon"></div>
+            <div class="meteo-temperature" id="temperature"></div>
+            <div class="meteo-unit">°C</div>
+          </div>
+        </div>
+        <div class="meteo-forecast" id="forecast"></div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/mymehrnaz/" target="_blank">
+          Mehrnaz Sadeghian</a
+        >and is
+        <a href="https://github.com/mymehrnaz/meteo-kitt" target="_blank">
+          on GitHub</a
+        >
+        and
+        <a href="https://netlify.app/" target="_blank">hosted on Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
